@@ -5,14 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Project_WebSite</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
     <style>
         body {font-family: Arial, Helvetica, sans-serif;
-            width: 800px;
-            height: 600px;
-           background-image: url('https://steemitimages.com/DQmTGg6x3DqZyxmGPBYXBWkKrJu1tF2JaTPWe9rj4htpedg/20170927_193700.jpg');
-           background-size: 600px;
+          background-image: url("Resources/book-contact.jpg");
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
         }
-        * {box-sizing: border-box;}
+        .contact{
+          padding-top: 40px;
+         
+        }
+
+        * {
+          box-sizing: border-box;}
         
         input[type=text], select, textarea {
           width: 100%;
@@ -35,14 +46,22 @@
         }
         
         input[type=submit]:hover {
-          background-color: #45a049;
+          background-color: #189bf1;
         }
         
         .container {
-          border-radius: 5px;
-          background-image: url('https://phonoteka.org/uploads/posts/2021-04/1618592320_25-phonoteka_org-p-fon-dlya-fotografa-39.jpg' );
-          background-size: 500px;
-          padding: 120px;
+          border-radius: 10px;
+          background-image: url('Resources/contact.jpg' );
+          background-size: cover;
+         
+            position: relative;
+          padding: 50px;
+          width: 600px;
+          font-weight: bold;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: larger;
+        
+          
         }
         
         </style>
@@ -53,26 +72,27 @@
   <nav>
     <div class="menu">
       <div class="logo">
-        <a href="#">Photography Photos</a>
+        <a href="#" onclick="confirm('Welcome to My Midterm_Project');">Online_Library</a>
       </div>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li> 
-        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="index.html" onclick="confirm('Are you sure?');">Home</a></li>
+        <li><a href="login.html" onclick="prompt('What is your name?', 'Name');">Login</a></li>
+        <li><a href="services.html" onclick="confirm('Are you sure?');">Library/Services</a></li>
+        <li><a href="contact.html" onclick="confirm('Are you sure?');">Contact</a></li> 
+        <li><a href="feedback.html" onclick="confirm('Are you sure?');">Feedback</a></li>
       </ul>
     </div>
   </nav>
+  <div class="contact">
 
-  <h3 style="color: chocolate;">Contact Form</h3>
+ 
 
 <div class="container">
- 
-    <label for="fname"style="color: chartreuse;">First Name</label>
+  
+    <label for="fname"style="color: black;">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <label for="lname" style="color: chartreuse;">Last Name</label>
+    <label for="lname" style="color: rgb(255, 210, 8);">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
     <label for="country" style="color: chartreuse;">Country</label>
@@ -84,11 +104,12 @@
       <option value="usa">Kazakhstan</option>
     </select>
 
-    <label for="lname"style="color: chartreuse;">Phone number</label>
+    <label for="lname"style="color: white;">Phone number</label>
     <input type="text" id="lname" name="lastname" placeholder="Your phone number..">
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" onclick="confirm('Do you want confirm??');">
   </form>
+</div>
 </div>
   
     
