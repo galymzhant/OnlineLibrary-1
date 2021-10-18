@@ -5,25 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Galymzhan's Project</title>
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
    
    </head>
 <body>
   <nav>
     <div class="menu">
       <div class="logo">
-        <a href="#">Photography Photos</a>
+        <a href="#" onclick="confirm('Welcome to My Midterm_Project');">Online_Library</a>
       </div>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li> 
-        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="index.html" onclick="confirm('Are you sure?');">Home</a></li>
+        <li><a href="login.html" onclick="prompt('What is your name?', 'Name');">Login</a></li>
+        <li><a href="services.html" onclick="confirm('Are you sure?');">Library/Services</a></li>
+        <li><a href="contact.html" onclick="confirm('Are you sure?');">Contact</a></li> 
+        <li><a href="feedback.html" onclick="confirm('Are you sure?');">Feedback</a></li>
       </ul>
     </div>
   </nav>
-  <div class="img"></div>
+  <div class="img">
+    <img src="Resources/library-1.jpg">
+  </div>
   <div class="center">
     <div class="title">Create Amazing WebProject</div>
     <div class="sub_title">Get Full Point</div>
