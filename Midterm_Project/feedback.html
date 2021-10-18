@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Project_WebSite</title>
     <link rel="stylesheet" href="style.css">
+    <link  href="script.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
     <style>
         body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('https://im0-tub-ru.yandex.net/i?id=b8e66ae26e5fc1dd54dd40f20dec8ba9-l&ref=rim&n=13&w=1080&h=1350');
-     width: 1000px;
-     height: 800px;
-    background-size: 400px;
+    background-image: url('Resources/library-2.jpg');
+    width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 * {box-sizing: border-box;}
 
@@ -26,7 +32,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+input[type=button] {
   background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
@@ -35,17 +41,22 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input[type=button]:hover {
   background-color: #738d75;
 }
 
 .container {
   border-radius: 5px;
-  background-image: url('https://im0-tub-ru.yandex.net/i?id=2a5c9329fe2c64c5053970dbc6146f3d-l&ref=rim&n=13&w=1080&h=1350') ;
-  background-size: 200px;
-  padding: 150px;
+  background-image: url('Resources/note-1.jpg') ;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 50px;
   color: rgb(235, 244, 252);
   font-weight: bold;
+}
+.feedback{
+  padding-top:  100px;
 }
         
         </style>
@@ -56,19 +67,20 @@ input[type=submit]:hover {
   <nav>
     <div class="menu">
       <div class="logo">
-        <a href="#">Photography Photos</a>
+        <a href="#">Online_Library</a>
       </div>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li> 
-        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="index.html" onclick="confirm('Are you sure?');">Home</a></li>
+        <li><a href="login.html" onclick="prompt('What is your name?', 'Name');">Login</a></li>
+        <li><a href="services.html" onclick="confirm('Are you sure?');">Library/Services</a></li>
+        <li><a href="contact.html" onclick="confirm('Are you sure?');">Contact</a></li> 
+        <li><a href="feedback.html" onclick="confirm('Are you sure?');">Feedback</a></li>
       </ul>
     </div>
   </nav>
 
   
+ <div class="feedback">
 
 <div class="container">
  <h3 style="color: rgb(22, 235, 33); font-weight: bold; font-size: 30px;" >Feedback</h3>
@@ -76,9 +88,18 @@ input[type=submit]:hover {
     <label for="subject">Problems and Offers </label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <form name="myForm" action="{action page}"></form>
+   
+    <input id="go" type="button" value="Submit">
   </form>
+  <p id="msg"></p>
 </div>
+</div>
+<!----   JAVA   Script-->
+<script src="script.js"></script>
+  
+  <!-- Replace '{action page}' with your own action page to support non-JavaScript users -->
+ 
     
       
    
