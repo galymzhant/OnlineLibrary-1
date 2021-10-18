@@ -54,7 +54,7 @@ nav .menu{
   color: black;
 }
 .img{
-  background: url('img3.jpg')no-repeat;
+  background: no-repeat;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -117,4 +117,11 @@ nav .menu{
 .center .btns button:last-child{
   background: white;
   color: black;
+}
+div img{
+  width: 100%;
+  height: auto;
+}
+div{
+  margin: o auto;
 }
